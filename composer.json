@@ -1,0 +1,25 @@
+{
+    "name": "realdriss/widget",
+    "description": "Widget package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "RealDriss\\Widget\\": "src"
+        }
+    },
+    "require": {
+        "realdriss/platform": "*@dev",
+        "realdriss/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealDriss\\Widget\\Providers\\WidgetServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "RealDriss\\Widget\\Facades\\WidgetFacade",
+                "WidgetGroup": "RealDriss\\Widget\\Facades\\WidgetGroupFacade"
+            }
+        }
+    }
+}
